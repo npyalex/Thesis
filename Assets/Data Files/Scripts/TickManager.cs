@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class TickManager : MonoBehaviour
 {
@@ -51,7 +52,7 @@ public class TickManager : MonoBehaviour
             tickObject1.SetActive(false);
             tickObject2.SetActive(false);
             tickObject3.SetActive(true);
+            SceneManager.LoadScene("SceneOne-LightMR", LoadSceneMode.Single);
         }
-
     }
 }
