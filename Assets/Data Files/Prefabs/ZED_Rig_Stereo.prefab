@@ -612,7 +612,7 @@ MonoBehaviour:
   NeedNewFrameGrab: 0
   streamInputIP: 127.0.0.1
   streamInputPort: 30000
-  enableTracking: 1
+  enableTracking: 0
   enableSpatialMemory: 1
   pathSpatialMemory: 
   estimateInitialPosition: 0
