@@ -27,13 +27,15 @@ public class Interaction : MonoBehaviour
         if (Physics.Raycast(transform.position, fwd, out hit)&&hit.collider.gameObject.CompareTag("Interactable"))
         {
             Vector3 appearHere = hit.collider.gameObject.transform.position;
-            toAppear.setActive(true);
+            toAppear.SetActive(true);
             appearHere = toAppear.transform.position;
             highlighted = true;
+            Debug.DrawRay(transform.position, fwd * hit.distance, Color.yellow);
         } else
         {
-            toAppear.setActive(false);
+            toAppear.SetActive(false);
             highlighted = false;
+            Debug.DrawRay(transform.position, fwd * 1000, Color.white);
         }
     }
 
