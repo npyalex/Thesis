@@ -11,6 +11,7 @@ TagManager:
   - zomBunny
   - Effects
   - Interactable
+  - Returner
   layers:
   - Default
   - TransparentFX

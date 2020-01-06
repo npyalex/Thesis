@@ -5,47 +5,47 @@ using UnityEngine;
 public class Interaction : MonoBehaviour
 {
     public GameObject toAppear;
+    public GameObject rayOrigin;
     private GameObject grabbedObject;
     private bool highlighted;
     // Start is called before the first frame update
     void Start()
     {
-        
+        toAppear.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void Point()
-    {
         RaycastHit hit;
-        Vector3 fwd = transform.TransformDirection(Vector3.forward);
-        
-        if (Physics.Raycast(transform.position, fwd, out hit)&&hit.collider.gameObject.CompareTag("Interactable"))
+        Vector3 origin = rayOrigin.transform.position;
+        //Vector3 fwd = transform.TransformDirection(Vector3.forward);
+        if (Physics.Raycast(origin, (rayOrigin.transform.up*-1), out hit) && hit.collider.gameObject.CompareTag("Interactable"))
         {
-            Vector3 appearHere = hit.collider.gameObject.transform.position;
+            //Vector3 appearHere = 
             toAppear.SetActive(true);
-            appearHere = toAppear.transform.position;
+            toAppear.transform.position = hit.collider.gameObject.transform.position;
             highlighted = true;
-            Debug.DrawRay(transform.position, fwd * hit.distance, Color.yellow);
-        } else
+            Debug.DrawRay(origin, (rayOrigin.transform.up * -1), Color.yellow);
+        }
+        else
         {
             toAppear.SetActive(false);
             highlighted = false;
-            Debug.DrawRay(transform.position, fwd * 1000, Color.white);
+            Debug.DrawRay(origin, (rayOrigin.transform.up * -1) * 1000, Color.white);
         }
+
     }
 
     public void Grab()
     {
+        Debug.Log("Grasp Detected");
         if (highlighted == true)
         {
             RaycastHit hit;
-            Vector3 fwd = transform.TransformDirection(Vector3.forward);
-            if (Physics.Raycast(transform.position, fwd, out hit) && hit.collider.gameObject.CompareTag("Interactable"))
+            Vector3 origin = rayOrigin.transform.position;
+            //Vector3 fwd = transform.TransformDirection(Vector3.forward);
+            if (Physics.Raycast(origin, (rayOrigin.transform.up * -1), out hit) && hit.collider.gameObject.CompareTag("Interactable"))
             {
                 Vector3 newPosition = hit.point;
                 grabbedObject = hit.collider.gameObject;
