@@ -23,6 +23,11 @@ public class FadeInTimer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+    }
+
+    public void Fade()
+    {
         //manage the fade in
         lerpAmount += Time.deltaTime;
         if (lerpAmount > fadeDuration)

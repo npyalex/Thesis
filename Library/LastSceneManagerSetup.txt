@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Data Files/Scenes/SceneOne-LightMR.unity
+- path: Assets/Data Files/Scenes/SceneThree-FullVR.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0

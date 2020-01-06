@@ -42,17 +42,16 @@ public class Interaction : MonoBehaviour
         Debug.Log("Grasp Detected");
         if (highlighted == true)
         {
-            RaycastHit hit;
-            Vector3 origin = rayOrigin.transform.position;
-            //Vector3 fwd = transform.TransformDirection(Vector3.forward);
-            if (Physics.Raycast(origin, (rayOrigin.transform.up * -1), out hit) && hit.collider.gameObject.CompareTag("Interactable"))
-            {
-                Vector3 newPosition = hit.point;
-                grabbedObject = hit.collider.gameObject;
-                //grabbedObject.rigidbody.freezeRotation = true;
-                grabbedObject.transform.position = newPosition;
-            }
-
+            //RaycastHit hit;
+            //Vector3 origin = rayOrigin.transform.position;
+            ////Vector3 fwd = transform.TransformDirection(Vector3.forward);
+            //if (Physics.Raycast(origin, (rayOrigin.transform.up * -1), out hit) && hit.collider.gameObject.CompareTag("Interactable"))
+            //{
+            //    Vector3 newPosition = hit.point;
+            //    grabbedObject = hit.collider.gameObject;
+            //    //grabbedObject.rigidbody.freezeRotation = true;
+            //    grabbedObject.transform.position = newPosition;
+            //}
         }
     }
 }

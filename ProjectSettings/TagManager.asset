@@ -12,6 +12,7 @@ TagManager:
   - Effects
   - Interactable
   - Returner
+  - Key
   layers:
   - Default
   - TransparentFX

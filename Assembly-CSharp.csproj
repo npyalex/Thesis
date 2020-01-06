@@ -58,6 +58,7 @@
      <Compile Include="Assets\Data Files\Scripts\FadeInTimer.cs" />
      <Compile Include="Assets\Data Files\Scripts\Interaction.cs" />
      <Compile Include="Assets\Data Files\Scripts\Move.cs" />
+     <Compile Include="Assets\Data Files\Scripts\PuzzleManager.cs" />
      <Compile Include="Assets\Data Files\Scripts\ReturnToOrigin.cs" />
      <Compile Include="Assets\Data Files\Scripts\TickManager.cs" />
      <Compile Include="Assets\Depthkit\Core\Depthkit_Clip.cs" />
