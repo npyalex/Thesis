@@ -703,7 +703,7 @@ Transform:
   - {fileID: 1347964708}
   - {fileID: 460583402}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: -186.685, z: 0}
 --- !u!1001 &519467778
 PrefabInstance:
@@ -834,7 +834,7 @@ Transform:
   - {fileID: 917158306}
   - {fileID: 903333851}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 72.505005, z: 0}
 --- !u!1001 &591789939
 PrefabInstance:
@@ -2394,7 +2394,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: e1cc356820368e34e8eedef3190440a0, type: 2}
+      objectReference: {fileID: 2100000, guid: 4c9dae9a804ace64c98cf8c3d18b1cc0, type: 2}
     - target: {fileID: -927199367670048503, guid: 2f8a6c32686b7014c8c44693b1c62c74,
         type: 3}
       propertyPath: m_Name
@@ -2805,7 +2805,7 @@ PrefabInstance:
     - target: {fileID: 7477496424120168480, guid: b7b129d2a319db847af897a925439a63,
         type: 3}
       propertyPath: far clip plane
-      value: 200
+      value: 250
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b7b129d2a319db847af897a925439a63, type: 3}
@@ -3209,7 +3209,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4028099129090816, guid: 617110a19d3180b40bdf3b1e5cbf0639, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 4028099129090816, guid: 617110a19d3180b40bdf3b1e5cbf0639, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -4120,7 +4120,7 @@ PrefabInstance:
     - target: {fileID: -927199367670048503, guid: 26dcdd53794056f459e64f2167db19ad,
         type: 3}
       propertyPath: m_Name
-      value: Truong_Painter
+      value: Falling Statue
       objectReference: {fileID: 0}
     - target: {fileID: 3315148538871939024, guid: 26dcdd53794056f459e64f2167db19ad,
         type: 3}

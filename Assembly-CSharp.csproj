@@ -57,6 +57,7 @@
   <ItemGroup>
      <Compile Include="Assets\Data Files\Scripts\FadeInTimer.cs" />
      <Compile Include="Assets\Data Files\Scripts\Interaction.cs" />
+     <Compile Include="Assets\Data Files\Scripts\LoadScene.cs" />
      <Compile Include="Assets\Data Files\Scripts\Move.cs" />
      <Compile Include="Assets\Data Files\Scripts\PuzzleManager.cs" />
      <Compile Include="Assets\Data Files\Scripts\ReturnToOrigin.cs" />
