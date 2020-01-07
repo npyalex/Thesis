@@ -1,53 +1,16 @@
 {
   "actions": [
     {
-      "name": "/actions/default/in/InteractUI",
+      "name": "/actions/default/in/Grab",
       "type": "boolean"
     },
     {
-      "name": "/actions/default/in/Teleport",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/GrabPinch",
-      "type": "boolean"
-    },
-    {
-      "name": "/actions/default/in/GrabGrip",
+      "name": "/actions/default/in/Click",
       "type": "boolean"
     },
     {
       "name": "/actions/default/in/Pose",
       "type": "pose"
-    },
-    {
-      "name": "/actions/default/in/SkeletonLeftHand",
-      "type": "skeleton",
-      "skeleton": "/skeleton/hand/left"
-    },
-    {
-      "name": "/actions/default/in/SkeletonRightHand",
-      "type": "skeleton",
-      "skeleton": "/skeleton/hand/right"
-    },
-    {
-      "name": "/actions/default/in/Squeeze",
-      "type": "vector1",
-      "requirement": "optional"
-    },
-    {
-      "name": "/actions/default/in/HeadsetOnHead",
-      "type": "boolean",
-      "requirement": "optional"
-    },
-    {
-      "name": "/actions/default/in/SnapTurnLeft",
-      "type": "boolean",
-      "requirement": "suggested"
-    },
-    {
-      "name": "/actions/default/in/SnapTurnRight",
-      "type": "boolean"
     },
     {
       "name": "/actions/default/out/Haptic",
@@ -109,6 +72,14 @@
     {
       "name": "/actions/zed-default/out/Haptic",
       "type": "vibration"
+    },
+    {
+      "name": "/actions/Thesis/in/Grab",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/Thesis/in/Click",
+      "type": "boolean"
     }
   ],
   "action_sets": [
@@ -130,6 +101,10 @@
     },
     {
       "name": "/actions/zed-default",
+      "usage": "single"
+    },
+    {
+      "name": "/actions/Thesis",
       "usage": "single"
     }
   ],
@@ -186,18 +161,8 @@
   "localization": [
     {
       "language_tag": "en_US",
-      "/actions/default/in/GrabGrip": "Grab Grip",
-      "/actions/default/in/GrabPinch": "Grab Pinch",
-      "/actions/default/in/HeadsetOnHead": "Headset on head (proximity sensor)",
-      "/actions/default/in/InteractUI": "Interact With UI",
-      "/actions/default/in/Pose": "Pose",
-      "/actions/default/in/SkeletonLeftHand": "Skeleton (Left)",
-      "/actions/default/in/SkeletonRightHand": "Skeleton (Right)",
-      "/actions/default/in/Teleport": "Teleport",
       "/actions/default/out/Haptic": "Haptic",
       "/actions/platformer/in/Jump": "Jump",
-      "/actions/default/in/SnapTurnLeft": "Snap Turn (Left)",
-      "/actions/default/in/SnapTurnRight": "Snap Turn (Right)",
       "/actions/zed-default/in/Fire": "Fire",
       "/actions/zed-default/in/Back": "Back",
       "/actions/zed-default/in/Click": "Click",

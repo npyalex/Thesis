@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Data Files\Scripts\ControllerOnOff.cs" />
      <Compile Include="Assets\Data Files\Scripts\FadeInTimer.cs" />
      <Compile Include="Assets\Data Files\Scripts\Interaction.cs" />
      <Compile Include="Assets\Data Files\Scripts\LoadScene.cs" />
@@ -62,6 +63,7 @@
      <Compile Include="Assets\Data Files\Scripts\PuzzleManager.cs" />
      <Compile Include="Assets\Data Files\Scripts\ReturnToOrigin.cs" />
      <Compile Include="Assets\Data Files\Scripts\TickManager.cs" />
+     <Compile Include="Assets\Data Files\Scripts\ViveControllerManager.cs" />
      <Compile Include="Assets\Depthkit\Core\Depthkit_Clip.cs" />
      <Compile Include="Assets\Depthkit\Core\Depthkit_ClipPlayer.cs" />
      <Compile Include="Assets\Depthkit\Core\Depthkit_ClipRenderer.cs" />

@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Data Files/Scenes/SceneOne-LightMR.unity
+- path: Assets/Data Files/Scenes/TestingGrounds.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
