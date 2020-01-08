@@ -8,6 +8,8 @@ public class PuzzleManager : MonoBehaviour
     public GameObject rayOrigin;
     public FadeInTimer fadeInTimer;
     public LoadScene loadScene;
+    [Tooltip("Multiplier for the ray. 1 is forward, -1 is backward etc.")]
+    public int multiplier;
     //private Vector3 key1Location, key2Location, key3Location;
     private bool key1Solved, key2Solved, key3Solved;
     private int ticks = 0;
@@ -55,10 +57,11 @@ public class PuzzleManager : MonoBehaviour
 
     public void Solve()
     {
+        Debug.Log("Solve Initiated");
         RaycastHit hit;
         Vector3 origin = rayOrigin.transform.position;
         //Vector3 fwd = transform.TransformDirection(Vector3.forward);
-        if (Physics.Raycast(origin, (rayOrigin.transform.up * -1), out hit) && hit.collider.gameObject.CompareTag("Interactable"))
+        if (Physics.Raycast(origin, (rayOrigin.transform.up * multiplier), out hit) && hit.collider.gameObject.CompareTag("Interactable"))
         {
             if(hit.collider.gameObject.name == "Key1")
             {

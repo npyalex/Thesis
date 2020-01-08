@@ -11,8 +11,6 @@ public class ViveControllerManager : MonoBehaviour
     public SteamVR_Action_Boolean grabAction;
     public SteamVR_Action_Boolean grabHeld;
 
-    public GameObject toggleObject;
-
     public bool GetClickDown()
     {
         return clickAction.GetStateDown(handType);
