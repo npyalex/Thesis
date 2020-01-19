@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.thesis.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\SMACLab\\Documents\\GitHub\\Thesis\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\Users\\npale\\Documents\\GitHub\\Thesis\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "Thesis [Testing]"
