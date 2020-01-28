@@ -5,13 +5,15 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
-    path: Assets/Data Files/Scenes/TestingGrounds.unity
+  - enabled: 0
+    path: Assets/00_Project Files/Scenes/Archive/TestingGrounds.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
-    path: Assets/Data Files/Scenes/SceneOne-LightMR.unity
+  - enabled: 0
+    path: Assets/00_Project Files/Scenes/Archive/SceneOne-LightMR.unity
     guid: 75ec8e653f561bc4bafc1bd59c7d6466
-  - enabled: 1
-    path: Assets/Data Files/Scenes/SceneThree-FullVR.unity
+  - enabled: 0
+    path: Assets/00_Project Files/Scenes/Archive/SceneThree-FullVR.unity
     guid: f363313624a836a468f039a028987596
-  m_configObjects: {}
+  m_configObjects:
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 98dd6929642e1a14facc60f8ef94e3aa,
+      type: 2}

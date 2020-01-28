@@ -55,16 +55,21 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Data Files\Scripts\ControllerOnOff.cs" />
-     <Compile Include="Assets\Data Files\Scripts\FadeInTimer.cs" />
-     <Compile Include="Assets\Data Files\Scripts\Interaction.cs" />
-     <Compile Include="Assets\Data Files\Scripts\Interface.cs" />
-     <Compile Include="Assets\Data Files\Scripts\LoadScene.cs" />
-     <Compile Include="Assets\Data Files\Scripts\Move.cs" />
-     <Compile Include="Assets\Data Files\Scripts\PuzzleManager.cs" />
-     <Compile Include="Assets\Data Files\Scripts\ReturnToOrigin.cs" />
-     <Compile Include="Assets\Data Files\Scripts\TickManager.cs" />
-     <Compile Include="Assets\Data Files\Scripts\ViveControllerManager.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\ControllerOnOff.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\DestroyAfterThrow.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\Dispenser.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\DropOnceTouched.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\FadeInTimer.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\Interaction.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\Interface.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\LoadScene.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\Move.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\PlayOnImpact.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\PuzzleManager.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\ReturnToOrigin.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\TickManager.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\TouchInterface.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\ViveControllerManager.cs" />
      <Compile Include="Assets\Depthkit\Core\Depthkit_Clip.cs" />
      <Compile Include="Assets\Depthkit\Core\Depthkit_ClipPlayer.cs" />
      <Compile Include="Assets\Depthkit\Core\Depthkit_ClipRenderer.cs" />
@@ -129,6 +134,10 @@
      <Compile Include="Assets\EpicFireflyEffects\Scripts\ManualScripts.cs" />
      <Compile Include="Assets\EpicFireflyEffects\Scripts\fxController.cs" />
      <Compile Include="Assets\EpicFireflyEffects\Scripts\rotateCamera.cs" />
+     <Compile Include="Assets\Interactive Grass\Script\Demo1.cs" />
+     <Compile Include="Assets\Interactive Grass\Script\Demo2.cs" />
+     <Compile Include="Assets\Interactive Grass\Script\FreeCamera.cs" />
+     <Compile Include="Assets\Interactive Grass\Script\Grass.cs" />
      <Compile Include="Assets\LeapMotion\Modules\Hands\Examples\Scripts\CenterTransformOnCam.cs" />
      <Compile Include="Assets\LeapMotion\Modules\Hands\Examples\Scripts\CycleHandPairs.cs" />
      <Compile Include="Assets\LeapMotion\Modules\Hands\Scripts\LeapHandsAutoRig.cs" />
@@ -549,9 +558,9 @@
      <None Include="Assets\Depthkit\Looks\Photo\Shaders\Resources\Depthkit_Photo.shader" />
      <None Include="Assets\Depthkit\Looks\ZeroDays\Shaders\Resources\Depthkit_ZeroDaysLookFill.shader" />
      <None Include="Assets\ZED\Examples\Mixed Reality Calibration\Shaders\ColorTexTransparent.shader" />
-     <None Include="Assets\Data Files\Imports\Depthkit Imports\Matt Footage\CLOWN_NOSE07_14_15_51_03_Export_07_15_10_58_47.txt" />
+     <None Include="Assets\00_Project Files\Imports\Depthkit Imports\Matt Footage\CLOWN_NOSE07_14_15_51_03_Export_07_15_10_58_47.txt" />
      <None Include="Assets\ZED\Examples\GreenScreen\Readme.txt" />
-     <None Include="Assets\Data Files\Imports\Depthkit Imports\Matt Footage\Test Takes\TAKE_07_14_14_59_32_Export_07_14_15_01_27.txt" />
+     <None Include="Assets\00_Project Files\Imports\Depthkit Imports\Matt Footage\Test Takes\TAKE_07_14_14_59_32_Export_07_14_15_01_27.txt" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\SpatialMapping\GeometryWireframe.shader" />
      <None Include="Assets\ZED\Examples\Plane Detection\Textures\Readme.txt" />
      <None Include="Assets\ZED\Examples\OpenCV ArUco Detection\Shaders\UnlitTrans.shader" />
@@ -583,10 +592,10 @@
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Shaders\ACES.cginc" />
      <None Include="Assets\Depthkit\Examples\Clips\John\John.txt" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Shaders\UberSecondPass.cginc" />
-     <None Include="Assets\Data Files\Imports\Depthkit Imports\2nd Pass Footage\CLOWN_NOSE07_14_15_51_03_Export_07_30_12_26_26.txt" />
+     <None Include="Assets\00_Project Files\Imports\Depthkit Imports\2nd Pass Footage\CLOWN_NOSE07_14_15_51_03_Export_07_30_12_26_26.txt" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Deferred.shader" />
      <None Include="Assets\ZED\Examples\Drone Shooter\Resources\explosion\Particle_Softrim_Dissolve_alpha.shader" />
-     <None Include="Assets\Data Files\Imports\Depthkit Imports\Matt Footage\BACK_PAGE07_14_15_54_07_Export_07_15_10_30_58.txt" />
+     <None Include="Assets\00_Project Files\Imports\Depthkit Imports\Matt Footage\BACK_PAGE07_14_15_54_07_Export_07_15_10_30_58.txt" />
      <None Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\readme.txt" />
      <None Include="Assets\ZED\Examples\SpatialMapping\README.txt" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
@@ -608,7 +617,7 @@
      <None Include="Assets\ZED\Examples\Mixed Reality Calibration\Shaders\UnlitDarkenable.shader" />
      <None Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Dependencies.txt" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\SpatialMapping\Postprocess_blend.shader" />
-     <None Include="Assets\Data Files\Imports\Depthkit Imports\Matt Footage\BOOK_COVER07_14_15_46_10_Export_07_15_11_00_41.txt" />
+     <None Include="Assets\00_Project Files\Imports\Depthkit Imports\Matt Footage\BOOK_COVER07_14_15_46_10_Export_07_15_11_00_41.txt" />
      <None Include="Assets\ZED\Examples\Drone Shooter\Resources\Muzzleflash_FX\WFX_S Particle Add A8.shader" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Bluenoise64\LICENSE.txt" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Shaders\BuiltinDebugViews.shader" />
@@ -620,9 +629,10 @@
      <None Include="Assets\ZED\Examples\Planetarium\Resources\Self-Illumin.shader" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Shaders\Common.cginc" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
-     <None Include="Assets\Data Files\Annotations\Notes.txt" />
+     <None Include="Assets\00_Project Files\Annotations\Notes.txt" />
      <None Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Shaders\PassthroughForeground.shader" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Editor Resources\UI\Trackball.shader" />
+     <None Include="Assets\Interactive Grass\Shader\Interactive Grass Large Scale.shader" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_Unlit_PostProcessing.shader" />
      <None Include="Assets\ZED\SDK\Helpers\Resources\PrefabsUI\Shader\OverlayCustom.shader" />
      <None Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Shaders\PassthroughBackground.shader" />
@@ -634,8 +644,9 @@
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_ComposeMask.shader" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Shaders\GrainGen.shader" />
+     <None Include="Assets\Interactive Grass\ReadMe.txt" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Shaders\FXAA.shader" />
-     <None Include="Assets\Data Files\Imports\Depthkit Imports\2nd Pass Footage\BackPage2.txt" />
+     <None Include="Assets\00_Project Files\Imports\Depthkit Imports\2nd Pass Footage\BackPage2.txt" />
      <None Include="Assets\ZED\Examples\Plane Detection\Models\Readme.txt" />
      <None Include="Assets\ZED\SDK\Shaders\ZED_Unlit_BGRA.shader" />
      <None Include="Assets\ZED\Examples\Planetarium\Resources\Earth\Shaders\Earth.shader" />
@@ -648,7 +659,7 @@
      <None Include="Assets\ZED\Examples\GreenScreen\Shaders\YUV.shader" />
      <None Include="Assets\ZED\Examples\Movie Screen\Readme.txt" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_Surface_PostProcessing.shader" />
-     <None Include="Assets\Data Files\Imports\Depthkit Imports\2nd Pass Footage\CLOWN_NOSE07_14_15_48_29_Export_07_30_12_06_34.txt" />
+     <None Include="Assets\00_Project Files\Imports\Depthkit Imports\2nd Pass Footage\CLOWN_NOSE07_14_15_48_29_Export_07_30_12_06_34.txt" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_StencilToMask.shader" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Shaders\Bloom.shader" />
      <None Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Version.txt" />
@@ -672,10 +683,17 @@
      <None Include="Assets\ZED\SDK\Helpers\Shaders\ZED_PointCloud.shader" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
      <None Include="Assets\ZED\Examples\Drone Shooter\Readme.txt" />
+     <None Include="Assets\Interactive Grass\Shader\Interactive Grass Model.shader" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\PlaneDetection\GeometryWirePlane.shader" />
-     <None Include="Assets\Data Files\Imports\Depthkit Imports\Matt Footage\BookCover2.txt" />
+     <None Include="Assets\00_Project Files\Imports\Depthkit Imports\Matt Footage\BookCover2.txt" />
+ <Reference Include="Unity.XR.Management">
+ <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/Unity.XR.Management.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Subsystem.Registration">
+ <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/Unity.Subsystem.Registration.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
  <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
@@ -692,11 +710,26 @@
  <Reference Include="Unity.CollabProxy.Editor">
  <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEngine.XR.LegacyInputHelpers">
+ <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/UnityEngine.XR.LegacyInputHelpers.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.XR.Management.Editor">
+ <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/Unity.XR.Management.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.Rider.Editor">
  <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
+ <Reference Include="UnityEditor.SpatialTracking">
+ <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/UnityEditor.SpatialTracking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.SpatialTracking">
+ <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/UnityEngine.SpatialTracking.dll</HintPath>
+ </Reference>
  <Reference Include="Unity.TextMeshPro">
  <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.XR.LegacyInputHelpers">
+ <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/UnityEditor.XR.LegacyInputHelpers.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
  <HintPath>C:/Users/npale/Documents/GitHub/Thesis/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
