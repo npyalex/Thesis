@@ -55,6 +55,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\00_Project Files\Scripts\ActorManager.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\ControllerOnOff.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\DestroyAfterThrow.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\Dispenser.cs" />
@@ -65,6 +66,7 @@
      <Compile Include="Assets\00_Project Files\Scripts\Interface.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\LoadScene.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\Move.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\PaintWithFinger.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\PlayOnImpact.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\PuzzleManager.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\ReturnToOrigin.cs" />
@@ -606,6 +608,7 @@
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Shaders\Uber.shader" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Hide.shader" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Shaders\Blit.shader" />
+     <None Include="Assets\00_Project Files\Shaders\BehindTransparentStandardShader.shader" />
      <None Include="Assets\Depthkit\Looks\ZeroDays\Shaders\Resources\Depthkit_ZeroDaysLookOcclude.shader" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Editor Resources\Monitors\WaveformRender.shader" />
      <None Include="Assets\ZED\Examples\GreenScreen\Shaders\Mask_Quad.shader" />
@@ -630,6 +633,7 @@
      <None Include="Assets\ZED\Examples\Planetarium\Resources\Self-Illumin.shader" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Shaders\Common.cginc" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Resources\Bluenoise64\COPYING.txt" />
+     <None Include="Assets\00_Project Files\Shaders\TransparentShader.shader" />
      <None Include="Assets\00_Project Files\Annotations\Notes.txt" />
      <None Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Shaders\PassthroughForeground.shader" />
      <None Include="Assets\EpicFireflyEffects\PostProcessing\Editor Resources\UI\Trackball.shader" />

@@ -29,9 +29,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4155480217934152178}
-  m_LocalRotation: {x: -0.00000080704285, y: -0.7071073, z: 0.00000032603026, w: 0.7071063}
-  m_LocalPosition: {x: 0.67, y: 0.83, z: 0.89}
-  m_LocalScale: {x: 0.14111516, y: 0.14111513, z: 0.14111516}
+  m_LocalRotation: {x: -0.00000020831752, y: 0.15910614, z: 0.0000008451141, w: 0.98726153}
+  m_LocalPosition: {x: -0.206, y: 0.627, z: 1.364}
+  m_LocalScale: {x: 0.14111514, y: 0.14111513, z: 0.14111514}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -156,4 +156,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   destroyDistance: 1
-  time: 3
+  time: 10

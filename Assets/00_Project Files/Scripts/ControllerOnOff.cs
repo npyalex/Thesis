@@ -18,7 +18,7 @@ public class ControllerOnOff : MonoBehaviour
     {
         if(leftManager.GetGrabDown() || rightManager.GetGrabDown())
         {
-            //Debug.Log("Button Press Detected");
+            Debug.Log("Button Press Detected");
             if (toggleObject.activeSelf)
             {
                 toggleObject.SetActive(false);

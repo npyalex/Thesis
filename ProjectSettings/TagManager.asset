@@ -13,6 +13,7 @@ TagManager:
   - Interactable
   - Returner
   - Key
+  - PaintBucket
   layers:
   - Default
   - TransparentFX

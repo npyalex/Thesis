@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FadeChildren : MonoBehaviour
+public class FadeInChildren : MonoBehaviour
 {
     private Color startColor;
     private Color currColor;
@@ -23,7 +23,7 @@ public class FadeChildren : MonoBehaviour
         {
             Transform child = gameObject.transform.GetChild(childIndex);
 
-            child.gameObject.AddComponent<FadeChildren>();
+            child.gameObject.AddComponent<FadeInChildren>();
         }
     }
 
