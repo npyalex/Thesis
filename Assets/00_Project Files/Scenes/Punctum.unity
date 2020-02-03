@@ -5065,7 +5065,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1878883446}
-  - component: {fileID: 1878883445}
+  - component: {fileID: 1878883444}
   m_Layer: 0
   m_Name: Script Manager
   m_TagString: Untagged
@@ -5073,7 +5073,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1878883445
+--- !u!114 &1878883444
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5082,22 +5082,15 @@ MonoBehaviour:
   m_GameObject: {fileID: 1878883443}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 85bfb27de39b71a4caeaf4724d1f4339, type: 3}
+  m_Script: {fileID: 11500000, guid: 73b5befbde5eaea45ad9e59fd971c343, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  handType: 0
-  clickAction:
-    actionPath: /actions/default/in/Click
-    needsReinit: 0
-  clickHeld:
-    actionPath: /actions/default/in/Click
-    needsReinit: 0
-  grabAction:
-    actionPath: /actions/default/in/Grab
-    needsReinit: 0
-  grabHeld:
-    actionPath: /actions/default/in/Grab
-    needsReinit: 0
+  PaintTrigger: {fileID: 776719543}
+  HideTrigger: {fileID: 793939438}
+  CastleTrigger: {fileID: 175827459}
+  userBlindfold: {fileID: 2118577551}
+  titleText: {fileID: 0}
+  countdownTimerMax: 2
 --- !u!4 &1878883446
 Transform:
   m_ObjectHideFlags: 0
