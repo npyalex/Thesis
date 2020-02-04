@@ -6,11 +6,12 @@ public class TouchInterface : MonoBehaviour
 {
     private float timer;
     public float timerMax;
+    public bool hasRun;
     public GameObject toTrigger, switchOffOne, switchOffTwo;
     // Start is called before the first frame update
     void Start()
     {
-        
+        hasRun = false;
     }
 
     // Update is called once per frame
@@ -21,6 +22,7 @@ public class TouchInterface : MonoBehaviour
             toTrigger.SetActive(true);
             switchOffOne.SetActive(false);
             switchOffTwo.SetActive(false);
+            hasRun = true;
         }
     }
 

@@ -70,6 +70,7 @@
      <Compile Include="Assets\00_Project Files\Scripts\PlayOnImpact.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\PuzzleManager.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\ReturnToOrigin.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\TextFade.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\TickManager.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\TouchInterface.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\ViveControllerManager.cs" />
