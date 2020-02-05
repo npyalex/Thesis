@@ -6,11 +6,11 @@ public class Dispenser : MonoBehaviour
 {
     [Tooltip("Dispense the prefab if toDispense is not present in the scene")]
     public GameObject prefab, toDispense;
-     private Transform startLocation;
+    private Vector3 startLocation;
     // Start is called before the first frame update
     void Start()
     {
-        startLocation = toDispense.transform;
+        startLocation = new Vector3(toDispense.transform.position.x, toDispense.transform.position.y, toDispense.transform.position.z);
     }
 
     // Update is called once per frame
@@ -18,7 +18,8 @@ public class Dispenser : MonoBehaviour
     {
         if (toDispense == null){
         // create a new copy of the prefab and assign it to toDispense
-            toDispense = Instantiate(prefab, startLocation);
+            toDispense = Instantiate(prefab);
+            toDispense.transform.position = startLocation;
             toDispense.transform.parent = GameObject.Find("CastleScene").transform;
         }
     }

@@ -2749,6 +2749,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Boulder
       objectReference: {fileID: 0}
+    - target: {fileID: 4155480217934171333, guid: 2d4e549f68acac0478138ee77b8d3894,
+        type: 3}
+      propertyPath: time
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 4155480217934580742, guid: 2d4e549f68acac0478138ee77b8d3894,
         type: 3}
       propertyPath: m_LocalPosition.x
