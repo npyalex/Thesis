@@ -78,16 +78,24 @@ public class ActorManager : MonoBehaviour
         else if (advance == 5)
         {
             //turn all scenes off; lets the actor exit a scene and return to the hub.
+            //turns triggers back on.
             paintSceneObject.SetActive(false);
             hideSceneObject.SetActive(false);
             castleSceneObject.SetActive(false);
+            paintTrigger.SetActive(true);
+            hideTrigger.SetActive(true);
+            castleTrigger.SetActive(true);
         }
         else if (advance == 6)
         {
             //turn all scenes off; lets the actor exit a scene and return to the hub.
+            //turns triggers back on.
             paintSceneObject.SetActive(false);
             hideSceneObject.SetActive(false);
             castleSceneObject.SetActive(false);
+            paintTrigger.SetActive(true);
+            hideTrigger.SetActive(true);
+            castleTrigger.SetActive(true);
         }
 
         //if a scene has run, turn its trigger off.

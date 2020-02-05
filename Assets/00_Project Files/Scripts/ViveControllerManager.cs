@@ -32,7 +32,7 @@ public class ViveControllerManager : MonoBehaviour
     public bool GetGrab()
     {
         return grabHeld.GetState(handType);
-        Debug.Log("Grab Held");
+        //Debug.Log("Grab Held");
     }
 
     // Start is called before the first frame update

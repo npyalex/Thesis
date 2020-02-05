@@ -74,13 +74,13 @@ public class Interface : MonoBehaviour
                 Activate();
             }
         }
-        else if (hovering == false);
-        {
-            //Debug.Log("Hovering is"+ hovering);
-            timer = 0.0f;
-            lt.color = startColor;
-            toAppear.SetActive(false);
-        }
+        //else if (hovering == false);
+        //{
+        //    //Debug.Log("Hovering is"+ hovering);
+        //    timer = 0.0f;
+        //    lt.color = startColor;
+        //    toAppear.SetActive(false);
+        //}
     }
 
     void Activate()
