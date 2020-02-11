@@ -8,10 +8,16 @@ public class TouchInterface : MonoBehaviour
     public float timerMax;
     public bool hasRun;
     public GameObject toTrigger, switchOffOne, switchOffTwo;
+
+    //Audio variables
+    public AudioClip feedbackNoise;
+    public GameObject cameraEyes;
+    AudioSource audioSource;
     // Start is called before the first frame update
     void Start()
     {
         hasRun = false;
+        audioSource = cameraEyes.GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -23,6 +29,7 @@ public class TouchInterface : MonoBehaviour
             switchOffOne.SetActive(false);
             switchOffTwo.SetActive(false);
             hasRun = true;
+            audioSource.PlayOneShot(feedbackNoise, 1.0f);
         }
     }
 

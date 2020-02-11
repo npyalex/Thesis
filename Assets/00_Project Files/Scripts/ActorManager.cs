@@ -5,10 +5,15 @@ using UnityEngine;
 public class ActorManager : MonoBehaviour
 {
     private int advance;
-    public GameObject paintTrigger, hideTrigger, castleTrigger, titleText, paintSceneObject, hideSceneObject, castleSceneObject;
+    public GameObject paintTrigger, hideTrigger, castleTrigger, titleText, paintSceneObject, hideSceneObject, castleSceneObject, fireflies;
     public FadeInTimer userBlindfold;
     public TextFade wordOne, wordTwo, wordThree;
     public TouchInterface hideScene, paintScene, castleScene;
+
+    //Audio variables
+    public AudioClip feedbackNoise;
+    public GameObject cameraEyes;
+    AudioSource audioSource;
 
     //timer variables
     private float timer;
@@ -18,6 +23,7 @@ public class ActorManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        audioSource = cameraEyes.GetComponent <AudioSource>();
         advance = 1;
         paintScene = paintTrigger.GetComponent<TouchInterface>();
         hideScene = hideTrigger.GetComponent<TouchInterface>();
@@ -39,6 +45,7 @@ public class ActorManager : MonoBehaviour
                 //Debug.Log("Trigger Activated");
                 advance++;
                 hasRun = true;
+                audioSource.PlayOneShot(feedbackNoise, 1.0f);
             }
         }
         if (Input.GetButtonUp("Fire1") || Input.GetButtonUp("Fire2"))
@@ -58,6 +65,7 @@ public class ActorManager : MonoBehaviour
         {
             //Remove use blindfold
             userBlindfold.Fade();
+            fireflies.SetActive(false);
         }
         else if (advance == 3)
         {
