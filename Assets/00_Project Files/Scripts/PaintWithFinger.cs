@@ -46,6 +46,7 @@ public class PaintWithFinger : MonoBehaviour
         }
     }
 
+    //if this hand is left, change paint / if this hand is right, change paint. have two separate scripts, one for each hand
     public void ChangeToBluePaint()
     {
         {

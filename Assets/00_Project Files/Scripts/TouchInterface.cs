@@ -33,10 +33,11 @@ public class TouchInterface : MonoBehaviour
         }
     }
 
+    //this function is called when the player touches the trigger object
    public void CountUp(){
         timer += Time.deltaTime;
     }
-
+    //this function is called when the player removes their hand from the trigger object
    public void EndCount(){
         timer = 0.0f;
     }
