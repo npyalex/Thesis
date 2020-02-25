@@ -62,6 +62,7 @@
      <Compile Include="Assets\00_Project Files\Scripts\DropOnceTouched.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\FadeInChildren.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\FadeInTimer.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\FadeOutTimer.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\Interaction.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\Interface.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\LoadScene.cs" />

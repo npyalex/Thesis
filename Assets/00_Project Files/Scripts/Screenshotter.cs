@@ -5,18 +5,22 @@ using UnityEngine;
 public class Screenshotter : MonoBehaviour
 {
     private string dateTime;
+    private string fileName;
     private Renderer rend;
     private Texture text;
+
+    public GameObject polaroid;
     // Start is called before the first frame update
     void Start()
     {
-        rend = gameObject.GetComponent<Renderer>();
+        rend = polaroid.GetComponent<Renderer>();
     }
 
     // Update is called once per frame
     void Update()
     {
        dateTime = System.DateTime.Now.ToString();
+       fileName = dateTime.Replace(" ","").Replace(":","");
        // take the screenshot when something happens
     }
 
@@ -30,7 +34,8 @@ public class Screenshotter : MonoBehaviour
 
     public void TakeScreenshot()
     {
-        ScreenCapture.CaptureScreenshot("PunctumScreenshot_" + dateTime, ScreenCapture.StereoScreenCaptureMode.LeftEye);
+        ScreenCapture.CaptureScreenshot("Screenshots/PunctumScreenshot_" + fileName +".png", ScreenCapture.StereoScreenCaptureMode.LeftEye);
+        Debug.Log("Screenshot saved to Screenshots/PunctumScreenshot_" + fileName);
         RecordFrame();
     }
 }

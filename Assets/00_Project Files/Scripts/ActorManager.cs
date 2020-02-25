@@ -7,11 +7,16 @@ public class ActorManager : MonoBehaviour
     private int advance;
     public GameObject paintTrigger, hideTrigger, castleTrigger, titleText, paintSceneObject, hideSceneObject, castleSceneObject, fireflies;
     public FadeInTimer userBlindfold;
+    public FadeOutTimer gameEnd;
     public TextFade wordOne, wordTwo, wordThree;
     public TouchInterface hideScene, paintScene, castleScene;
 
+
+    //Screenshot variables
+    public Screenshotter screenshotter;
     //Audio variables
     public AudioClip feedbackNoise;
+    public AudioClip cameraClick;
     public GameObject cameraEyes;
     AudioSource audioSource;
 
@@ -19,6 +24,7 @@ public class ActorManager : MonoBehaviour
     private float timer;
     public float countdownTimerMax;
     private bool hasRun = false;
+    private bool endGame = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,7 +39,7 @@ public class ActorManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Debug.Log("Advance = " + advance);
+        Debug.Log("Advance = " + advance);
         //Debug.Log("HasRun = " + hasRun);
 
         if ((Input.GetButton("Fire1") || Input.GetButton("Fire2")) && hasRun == false)
@@ -45,7 +51,10 @@ public class ActorManager : MonoBehaviour
                 //Debug.Log("Trigger Activated");
                 advance++;
                 hasRun = true;
-                audioSource.PlayOneShot(feedbackNoise, 1.0f);
+                if (paintSceneObject.activeSelf == false)
+                {
+                    audioSource.PlayOneShot(feedbackNoise, 1.0f);
+                }
             }
         }
         if (Input.GetButtonUp("Fire1") || Input.GetButtonUp("Fire2"))
@@ -83,14 +92,27 @@ public class ActorManager : MonoBehaviour
             titleText.SetActive(false);
 
         }
-        else if (advance >= 5)
+        else if (advance == 5)
         {
             //turn all scenes off; lets the actor exit a scene and return to the hub.
+            //if the paint scene is active, takes a screenshot
             //turns triggers back on.
+            if (paintSceneObject.activeSelf)
+            {
+                StartCoroutine("CameraClick");
+            }
             paintSceneObject.SetActive(false);
             hideSceneObject.SetActive(false);
             castleSceneObject.SetActive(false);
-            advance = 4;
+            if (endGame == false)
+            {
+                advance = 4;
+            }
+        }
+        else if (advance >= 6)
+        {
+            gameEnd.Fade();
+            fireflies.SetActive(true);
         }
 
         //if a scene has run, turn its trigger off.
@@ -106,24 +128,18 @@ public class ActorManager : MonoBehaviour
         {
             castleTrigger.SetActive(false);
         }
+
+        if ((hideScene.hasRun == true) && (paintScene.hasRun == true) && (castleScene.hasRun == true))
+        {
+            endGame = true;
+        }
     }
 
-    //public void StartHub()
-    //{
-    //}
-
-    //public void StartCastle()
-    //{
-
-    //}
-
-    //public void StartHideNSeek()
-    //{
-
-    //}
-
-    //public void StartPainting()
-    //{
-
-    //}
+    IEnumerator CameraClick()
+    {
+        screenshotter.TakeScreenshot();
+        audioSource.PlayOneShot(cameraClick, 1.0f);
+        paintSceneObject.SetActive(false);
+        yield return null;
+    }
 }
