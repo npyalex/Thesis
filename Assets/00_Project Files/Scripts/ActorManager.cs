@@ -75,15 +75,15 @@ public class ActorManager : MonoBehaviour
             //Remove use blindfold
             userBlindfold.Fade();
             fireflies.SetActive(false);
-        }
-        else if (advance == 3)
-        {
             //Fade out title text
             wordOne.Fade();
             wordTwo.Fade();
             wordThree.Fade();
         }
-        else if (advance == 4)
+        //else if (advance == 3)
+        //{
+        //}
+        else if (advance == 3)
         {
             //Hub State
             paintTrigger.SetActive(true);
@@ -92,7 +92,7 @@ public class ActorManager : MonoBehaviour
             titleText.SetActive(false);
 
         }
-        else if (advance == 5)
+        else if (advance == 4)
         {
             //turn all scenes off; lets the actor exit a scene and return to the hub.
             //if the paint scene is active, takes a screenshot
@@ -100,16 +100,19 @@ public class ActorManager : MonoBehaviour
             if (paintSceneObject.activeSelf)
             {
                 StartCoroutine("CameraClick");
+            } 
+            else
+            { 
+                paintSceneObject.SetActive(false);
+                hideSceneObject.SetActive(false);
+                castleSceneObject.SetActive(false);
             }
-            paintSceneObject.SetActive(false);
-            hideSceneObject.SetActive(false);
-            castleSceneObject.SetActive(false);
             if (endGame == false)
             {
-                advance = 4;
+                advance = 3;
             }
         }
-        else if (advance >= 6)
+        else if (advance >= 5)
         {
             gameEnd.Fade();
             fireflies.SetActive(true);
@@ -139,7 +142,8 @@ public class ActorManager : MonoBehaviour
     {
         screenshotter.TakeScreenshot();
         audioSource.PlayOneShot(cameraClick, 1.0f);
+        yield return new WaitForSeconds(0.5f);
         paintSceneObject.SetActive(false);
-        yield return null;
+        audioSource.PlayOneShot(feedbackNoise, 1.0f);
     }
 }

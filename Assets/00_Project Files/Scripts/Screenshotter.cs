@@ -36,6 +36,6 @@ public class Screenshotter : MonoBehaviour
     {
         ScreenCapture.CaptureScreenshot("Screenshots/PunctumScreenshot_" + fileName +".png", ScreenCapture.StereoScreenCaptureMode.LeftEye);
         Debug.Log("Screenshot saved to Screenshots/PunctumScreenshot_" + fileName);
-        RecordFrame();
+        StartCoroutine("RecordFrame");
     }
 }
