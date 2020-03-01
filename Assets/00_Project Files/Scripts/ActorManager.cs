@@ -72,7 +72,7 @@ public class ActorManager : MonoBehaviour
         }
         else if (advance == 2)
         {
-            //Remove use blindfold
+            //Remove user blindfold
             userBlindfold.Fade();
             fireflies.SetActive(false);
             //Fade out title text
