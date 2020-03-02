@@ -6,7 +6,7 @@ public class ActorManager : MonoBehaviour
 {
     private int advance;
     public GameObject paintTrigger, hideTrigger, castleTrigger, titleText, paintSceneObject, hideSceneObject, castleSceneObject, fireflies;
-    public FadeInTimer userBlindfold;
+    public FadeInTimer userBlindfold, giftPebble;
     public FadeOutTimer gameEnd;
     public TextFade wordOne, wordTwo, wordThree;
     public TouchInterface hideScene, paintScene, castleScene;
@@ -86,11 +86,20 @@ public class ActorManager : MonoBehaviour
         else if (advance == 3)
         {
             //Hub State
-            paintTrigger.SetActive(true);
-            hideTrigger.SetActive(true);
-            castleTrigger.SetActive(true);
             titleText.SetActive(false);
 
+            if (paintSceneObject.activeSelf == true || hideSceneObject.activeSelf == true || castleSceneObject.activeSelf == true)
+            {
+                paintTrigger.SetActive(false);
+                hideTrigger.SetActive(false);
+                castleTrigger.SetActive(false);
+            } 
+            else
+            {
+                paintTrigger.SetActive(true);
+                hideTrigger.SetActive(true);
+                castleTrigger.SetActive(true);
+            }
         }
         else if (advance == 4)
         {
@@ -112,7 +121,11 @@ public class ActorManager : MonoBehaviour
                 advance = 3;
             }
         }
-        else if (advance >= 5)
+        else if (advance == 5)
+        {
+            giftPebble.Fade();
+        }
+        else if (advance >= 6)
         {
             gameEnd.Fade();
             fireflies.SetActive(true);
