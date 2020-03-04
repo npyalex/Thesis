@@ -5,7 +5,7 @@ using UnityEngine;
 public class ActorManager : MonoBehaviour
 {
     private int advance;
-    public GameObject paintTrigger, hideTrigger, castleTrigger, titleText, paintSceneObject, hideSceneObject, castleSceneObject, fireflies;
+    public GameObject paintTrigger, hideTrigger, castleTrigger, titleText, paintSceneObject, hideSceneObject, castleSceneObject, fireflies, lHand, rHand;
     public FadeInTimer userBlindfold, giftPebble;
     public FadeOutTimer gameEnd;
     public TextFade wordOne, wordTwo, wordThree;
@@ -49,7 +49,7 @@ public class ActorManager : MonoBehaviour
             if (timer >= countdownTimerMax )
             {
                 //Debug.Log("Trigger Activated");
-                advance++;
+                Advance();
                 hasRun = true;
                 if (paintSceneObject.activeSelf == false)
                 {
@@ -73,6 +73,8 @@ public class ActorManager : MonoBehaviour
         else if (advance == 2)
         {
             //Remove user blindfold
+            lHand.SetActive(false);
+            rHand.SetActive(false);
             userBlindfold.Fade();
             fireflies.SetActive(false);
             //Fade out title text
@@ -129,6 +131,8 @@ public class ActorManager : MonoBehaviour
         {
             gameEnd.Fade();
             fireflies.SetActive(true);
+            lHand.SetActive(true);
+            rHand.SetActive(true);
         }
 
         //if a scene has run, turn its trigger off.
@@ -158,5 +162,10 @@ public class ActorManager : MonoBehaviour
         yield return new WaitForSeconds(0.5f);
         paintSceneObject.SetActive(false);
         audioSource.PlayOneShot(feedbackNoise, 1.0f);
+    }
+
+    public void Advance()
+    {
+        advance++;
     }
 }
