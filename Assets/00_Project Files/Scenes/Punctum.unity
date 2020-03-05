@@ -19628,6 +19628,130 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 4468819154456071010, guid: 86cc5d51e5f230f468278ed65c420110, type: 3}
+--- !u!1001 &1857042227361259903
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1857042227030044870, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 153966136}
+    - target: {fileID: 1857042227176995569, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 153966136}
+    - target: {fileID: 1857042227234664659, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 153966136}
+    - target: {fileID: 1857042227302391555, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 153966136}
+    - target: {fileID: 1857042227573603959, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.699
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857042227573603959, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.126
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857042227573603959, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 2.7946
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857042227573603959, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857042227573603959, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857042227573603959, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857042227573603959, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857042227573603959, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857042227573603959, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857042227573603959, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857042227573603959, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857042227573603960, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: m_Name
+      value: Grass Tuft
+      objectReference: {fileID: 0}
+    - target: {fileID: 1857042227623808856, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 153966136}
+    - target: {fileID: 1857042228253404508, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 153966136}
+    - target: {fileID: 1857042228524976011, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 153966136}
+    - target: {fileID: 1857042228555830354, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 153966136}
+    - target: {fileID: 1857042228836740523, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 153966136}
+    - target: {fileID: 1857042228910531861, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 153966136}
+    - target: {fileID: 1857042229045911931, guid: d97fabbc3672ee84db17d0fd1679ea49,
+        type: 3}
+      propertyPath: _manager
+      value: 
+      objectReference: {fileID: 153966136}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: d97fabbc3672ee84db17d0fd1679ea49, type: 3}
 --- !u!33 &2308629977656329683
 MeshFilter:
   m_ObjectHideFlags: 0
