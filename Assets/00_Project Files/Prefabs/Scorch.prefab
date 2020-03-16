@@ -11,8 +11,7 @@ GameObject:
   - component: {fileID: 6576545243002481189}
   - component: {fileID: 6840836216979626251}
   - component: {fileID: 8692395937938880190}
-  - component: {fileID: 4425429681462047934}
-  - component: {fileID: 2517778319697918889}
+  - component: {fileID: 7539101096957819320}
   m_Layer: 0
   m_Name: Scorch
   m_TagString: Untagged
@@ -27,13 +26,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8005259583707973123}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalPosition: {x: -0.2686225, y: 0.45175996, z: 1.8904704}
+  m_LocalScale: {x: 0.05, y: 0.05, z: 0.05}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
 --- !u!33 &6840836216979626251
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -81,21 +80,7 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!64 &4425429681462047934
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8005259583707973123}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &2517778319697918889
+--- !u!114 &7539101096957819320
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -104,9 +89,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8005259583707973123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a9190e25a05ccc64a835781b3c1cccc6, type: 3}
+  m_Script: {fileID: 11500000, guid: 300426baae041954181f79dbe8420c7f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fadeObject: {fileID: 8005259583707973123}
-  fadeDuration: 10
-  targetAlpha: 0
+  lifetimeMultiplier: 5

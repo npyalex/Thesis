@@ -4,14 +4,11 @@ using UnityEngine;
 
 public class Scorch : MonoBehaviour
 {
-    public GameObject scorch;
+    public float lifetimeMultiplier;
     // Start is called before the first frame update
     void Awake()
     {
-        Destroy(gameObject, 1*0.5f);
-        Instantiate(scorch, transform.position, transform.rotation);
-        FadeOutTimer fade = scorch.GetComponent<FadeOutTimer>();
-        fade.Fade();
+        Destroy(gameObject, 1 * lifetimeMultiplier);
     }
 
     // Update is called once per frame

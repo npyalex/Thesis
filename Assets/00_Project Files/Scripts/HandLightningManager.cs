@@ -5,7 +5,7 @@ using UnityEngine;
 public class HandLightningManager : MonoBehaviour
 {
     private Transform point;
-    public GameObject lightningEnd, lightningStart, fireEffect;
+    public GameObject lightningEnd, lightningStart, fireEffect, scorch;
     public float multiplier;
     // Start is called before the first frame update
     void Start()
@@ -21,18 +21,14 @@ public class HandLightningManager : MonoBehaviour
     void Update()
     {
         RaycastHit hit;
-        if (Physics.Raycast(lightningStart.transform.position, lightningStart.transform.TransformDirection(Vector3.right)*multiplier, out hit, Mathf.Infinity))
-            if (hit.collider.gameObject.name == "Contact Fingerbone" || hit.collider.gameObject.name == "Contact Palm")
-            {
-                lightningEnd.transform.position = hit.point;
-            }
-            else
-            {
-                Instantiate(fireEffect);
-                //fireEffect.SetActive(true);
-                lightningEnd.transform.position = hit.point;
-                fireEffect.transform.position = hit.point;
-            }
-        Debug.Log("Hit object is " + hit.collider.gameObject.name);
+        if (Physics.Raycast(lightningStart.transform.position, lightningStart.transform.TransformDirection(Vector3.right) * multiplier, out hit, Mathf.Infinity))
+        {
+            Instantiate(fireEffect);
+            //Instantiate(scorch);
+            lightningEnd.transform.position = hit.point;
+            fireEffect.transform.position = hit.point;
+            scorch.transform.position = hit.point;
+            Debug.Log("Hit object is " + hit.collider.gameObject.name);
+        }
     }
 }
