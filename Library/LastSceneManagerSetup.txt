@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/00_Project Files/Scenes/Punctum.unity
+- path: Assets/00_Project Files/Scenes/Tests/Bubble Test.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
