@@ -58,7 +58,9 @@
      <Compile Include="Assets\00_Project Files\Scripts\ActorManager.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\BubbleTrigger.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\ControllerOnOff.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\DeletePaint.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\DestroyAfterThrow.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\DispenseOnActivate.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\Dispenser.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\DropOnCollision.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\DropOnceTouched.cs" />
@@ -67,6 +69,7 @@
      <Compile Include="Assets\00_Project Files\Scripts\FadeOutTimer.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\GameStartTouchInterface.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\HandLightningManager.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\ImpulseOnAwake.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\Interaction.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\Interface.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\LoadScene.cs" />
