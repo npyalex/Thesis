@@ -13,6 +13,11 @@
       "type": "pose"
     },
     {
+      "name": "/actions/default/in/skeleton",
+      "type": "skeleton",
+      "skeleton": "/skeleton/hand/right"
+    },
+    {
       "name": "/actions/default/out/Haptic",
       "type": "vibration"
     },

@@ -95,8 +95,12 @@
                "path" : "/user/hand/left/input/skeleton/left"
             },
             {
-               "output" : "/actions/default/in/skeletonrighthand",
+               "output" : "/actions/default/in/skeleton",
                "path" : "/user/hand/right/input/skeleton/right"
+            },
+            {
+               "output" : "/actions/default/in/skeleton",
+               "path" : "/user/hand/left/input/skeleton/right"
             }
          ],
          "sources" : [
@@ -140,13 +144,20 @@
                "inputs" : {
                   "click" : {
                      "output" : "/actions/default/in/click"
-                  },
-                  "held" : {
-                     "output" : "/actions/default/in/click"
                   }
                },
                "mode" : "button",
                "path" : "/user/hand/right/input/trackpad"
+            },
+            {
+               "inputs" : {},
+               "mode" : "none",
+               "path" : "/user/hand/left/input/skeleton/left"
+            },
+            {
+               "inputs" : {},
+               "mode" : "none",
+               "path" : "/user/hand/right/input/skeleton/left"
             }
          ]
       },

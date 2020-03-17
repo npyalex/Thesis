@@ -41,6 +41,14 @@ namespace Valve.VR
             }
         }
         
+        public virtual SteamVR_Action_Skeleton skeleton
+        {
+            get
+            {
+                return SteamVR_Actions.default_skeleton;
+            }
+        }
+        
         public virtual SteamVR_Action_Vibration Haptic
         {
             get
