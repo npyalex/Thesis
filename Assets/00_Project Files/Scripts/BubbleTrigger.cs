@@ -5,7 +5,7 @@ using UnityEngine;
 public class BubbleTrigger : MonoBehaviour
 {
     public GameObject scene, light;
-    public bool sceneActive, lightOn;
+    public bool sceneActive, lightOn, destroyOnActivate;
     // Start is called before the first frame update
     void Start()
     {
@@ -32,6 +32,11 @@ public class BubbleTrigger : MonoBehaviour
         {
             scene.SetActive(false);
             sceneActive = false;
+        }
+
+        if (destroyOnActivate == true)
+        {
+            Destroy(gameObject);
         }
     }
 

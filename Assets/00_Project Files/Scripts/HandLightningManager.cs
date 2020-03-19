@@ -23,12 +23,15 @@ public class HandLightningManager : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(lightningStart.transform.position, lightningStart.transform.TransformDirection(Vector3.right) * multiplier, out hit, Mathf.Infinity))
         {
+            Rigidbody rigidbody = hit.collider.gameObject.GetComponent<Rigidbody>();
+            Vector3 direction = hit.transform.position - lightningStart.transform.position;
             Instantiate(fireEffect);
             //Instantiate(scorch);
             lightningEnd.transform.position = hit.point;
             fireEffect.transform.position = hit.point;
             scorch.transform.position = hit.point;
             Debug.Log("Hit object is " + hit.collider.gameObject.name);
+            rigidbody.AddForceAtPosition(direction.normalized, hit.point, ForceMode.Impulse);
         }
     }
 }
