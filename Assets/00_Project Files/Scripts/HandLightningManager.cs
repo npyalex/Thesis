@@ -32,6 +32,10 @@ public class HandLightningManager : MonoBehaviour
             scorch.transform.position = hit.point;
             Debug.Log("Hit object is " + hit.collider.gameObject.name);
             rigidbody.AddForceAtPosition(direction.normalized, hit.point, ForceMode.Impulse);
+            if(hit.collider.gameObject.tag == "Destructible")
+            {
+                Destroy(hit.collider.gameObject);
+            }
         }
     }
 }

@@ -55,6 +55,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\00_Project Files\Imports\Interactive Grass\Script\Demo1.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\Interactive Grass\Script\Demo2.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\Interactive Grass\Script\FreeCamera.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\Interactive Grass\Script\Grass.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\ActorManager.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\BubbleTrigger.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\ControllerOnOff.cs" />
@@ -101,10 +107,6 @@
      <Compile Include="Assets\Depthkit\Looks\ZeroDays\Scripts\Depthkit_ZeroDaysLookPointLayer.cs" />
      <Compile Include="Assets\Depthkit\Players\Depthkit_AVProVideoPlayer.cs" />
      <Compile Include="Assets\Depthkit\Players\Depthkit_UnityVideoPlayer.cs" />
-     <Compile Include="Assets\Interactive Grass\Script\Demo1.cs" />
-     <Compile Include="Assets\Interactive Grass\Script\Demo2.cs" />
-     <Compile Include="Assets\Interactive Grass\Script\FreeCamera.cs" />
-     <Compile Include="Assets\Interactive Grass\Script\Grass.cs" />
      <Compile Include="Assets\LeapMotion\Modules\Hands\Examples\Scripts\CenterTransformOnCam.cs" />
      <Compile Include="Assets\LeapMotion\Modules\Hands\Examples\Scripts\CycleHandPairs.cs" />
      <Compile Include="Assets\LeapMotion\Modules\Hands\Scripts\LeapHandsAutoRig.cs" />
@@ -404,6 +406,9 @@
      <Compile Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Scripts\Utils\XRSupportUtil.cs" />
      <Compile Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Scripts\XR\LeapEyeDislocator.cs" />
      <Compile Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Scripts\XR\XRHeightOffset.cs" />
+     <Compile Include="Assets\Procedural Effects\Butterflies\Scripts\ButterfliesArea.cs" />
+     <Compile Include="Assets\Procedural Effects\Butterflies\Scripts\Butterfly.cs" />
+     <Compile Include="Assets\Procedural Effects\Butterflies\Scripts\CharacterController.cs" />
      <Compile Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Runtime\Attributes\GetSetAttribute.cs" />
      <Compile Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Runtime\Attributes\MinAttribute.cs" />
      <Compile Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Runtime\Attributes\TrackballAttribute.cs" />
@@ -465,8 +470,6 @@
      <Compile Include="Assets\Procedural Effects\RainMaker\Prefab\RainCollision.cs" />
      <Compile Include="Assets\Procedural Effects\RainMaker\Prefab\RainScript.cs" />
      <Compile Include="Assets\Procedural Effects\RainMaker\Prefab\RainScript2D.cs" />
-     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
-     <Compile Include="Assets\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
      <Compile Include="Assets\ZED\Examples\Dark Room\Scripts\DisableUntilZEDReady.cs" />
      <Compile Include="Assets\ZED\Examples\Dark Room\Scripts\LightShow.cs" />
      <Compile Include="Assets\ZED\Examples\Dark Room\Scripts\PitchOscillator.cs" />
@@ -669,7 +672,7 @@
      <None Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Shaders\PassthroughForeground.shader" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Editor Resources\UI\Trackball.shader" />
      <None Include="Assets\Procedural Effects\Procedural fire\Demo scene\Readme.txt" />
-     <None Include="Assets\Interactive Grass\Shader\Interactive Grass Large Scale.shader" />
+     <None Include="Assets\00_Project Files\Imports\Interactive Grass\Shader\Interactive Grass Large Scale.shader" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_Unlit_PostProcessing.shader" />
      <None Include="Assets\ZED\SDK\Helpers\Resources\PrefabsUI\Shader\OverlayCustom.shader" />
      <None Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Shaders\PassthroughBackground.shader" />
@@ -681,7 +684,7 @@
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_ComposeMask.shader" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Resources\Shaders\GrainGen.shader" />
-     <None Include="Assets\Interactive Grass\ReadMe.txt" />
+     <None Include="Assets\00_Project Files\Imports\Interactive Grass\ReadMe.txt" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Resources\Shaders\FXAA.shader" />
      <None Include="Assets\00_Project Files\Imports\Depthkit Imports\2nd Pass Footage\BackPage2.txt" />
      <None Include="Assets\ZED\Examples\Plane Detection\Models\Readme.txt" />
@@ -722,7 +725,7 @@
      <None Include="Assets\ZED\SDK\Helpers\Shaders\ZED_PointCloud.shader" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
      <None Include="Assets\ZED\Examples\Drone Shooter\Readme.txt" />
-     <None Include="Assets\Interactive Grass\Shader\Interactive Grass Model.shader" />
+     <None Include="Assets\00_Project Files\Imports\Interactive Grass\Shader\Interactive Grass Model.shader" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\PlaneDetection\GeometryWirePlane.shader" />
      <None Include="Assets\00_Project Files\Imports\Depthkit Imports\Matt Footage\BookCover2.txt" />
  <Reference Include="Unity.XR.Management">

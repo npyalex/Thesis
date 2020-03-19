@@ -125,6 +125,7 @@
      <Compile Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Scripts\Utils\Editor\UtilsTests.cs" />
      <Compile Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Scripts\XR\Editor\LeapEyeDislocatorEditor.cs" />
      <Compile Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Scripts\XR\Editor\XRHeightOffsetEditor.cs" />
+     <Compile Include="Assets\Procedural Effects\Butterflies\Scripts\Editor\ButterfliesAreaInspector.cs" />
      <Compile Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Editor\Attributes\PostProcessingModelEditorAttribute.cs" />
      <Compile Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Editor\Models\AmbientOcclusionModelEditor.cs" />
      <Compile Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Editor\Models\AntialiasingModelEditor.cs" />
