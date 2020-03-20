@@ -55,6 +55,14 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Editor\CrossSectionPlaneEditorWindow.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Editor\DatasetImporterEditorWIndow.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Editor\SelectionHelper.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Editor\SliceRenderingEditorWindow.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Editor\TransferFunction2DEditorWindow.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Editor\TransferFunctionEditorWindow.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Editor\VolumeRenderedObjectCustomInspector.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Editor\VolumeRendererEditorFunctions.cs" />
      <Compile Include="Assets\Depthkit\Editor\Depthkit_ClipEditor.cs" />
      <Compile Include="Assets\Depthkit\Editor\Depthkit_Menu.cs" />
      <Compile Include="Assets\Depthkit\Editor\Depthkit_PlayerProcessor.cs" />

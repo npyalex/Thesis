@@ -61,6 +61,21 @@
      <Compile Include="Assets\00_Project Files\Imports\Interactive Grass\Script\Grass.cs" />
      <Compile Include="Assets\00_Project Files\Imports\SpaceSkies Free\Demo\Scripts\LookCamera.cs" />
      <Compile Include="Assets\00_Project Files\Imports\SpaceSkies Free\Demo\Scripts\SkyboxChanger.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\Importing\DatasetImporterBase.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\Importing\DatasetIniReader.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\Importing\RawDatasetImporter.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\TransferFunction\TFControlPoints.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\TransferFunction\TransferFunction.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\TransferFunction\TransferFunction2D.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\TransferFunction\TransferFunctionDatabase.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\Utils\HistogramTextureGenerator.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\Utils\NoiseTextureGenerator.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\VolumeData\VolumeDataset.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\VolumeObject\RenderMode.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\VolumeObject\SlicingPlane.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\VolumeObject\SlicingPlaneAnyDirection.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\VolumeObject\VolumeObjectFactory.cs" />
+     <Compile Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Scripts\VolumeObject\VolumeRenderedObject.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\ActorManager.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\BubbleTrigger.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\ControllerOnOff.cs" />
@@ -87,6 +102,7 @@
      <Compile Include="Assets\00_Project Files\Scripts\ReturnToOrigin.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\Scorch.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\Screenshotter.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\SpawnAtRandomPoint.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\TextFade.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\TickManager.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\TouchInterface.cs" />
@@ -595,6 +611,7 @@
      <None Include="Assets\00_Project Files\Imports\Depthkit Imports\Matt Footage\Test Takes\TAKE_07_14_14_59_32_Export_07_14_15_01_27.txt" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\SpatialMapping\GeometryWireframe.shader" />
      <None Include="Assets\ZED\Examples\Plane Detection\Textures\Readme.txt" />
+     <None Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\DataFiles\ACKNOWLEDGEMENTS.txt" />
      <None Include="Assets\00_Project Files\Imports\bubble\Bubble.shader" />
      <None Include="Assets\ZED\Examples\OpenCV ArUco Detection\Shaders\UnlitTrans.shader" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Deferred_Lighting.shader" />
@@ -614,8 +631,10 @@
      <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_Blur.shader" />
      <None Include="Assets\ZED\Examples\Drone Shooter\Resources\Muzzleflash_FX\WFX_S Particle AddSoft A8.shader" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Editor Resources\Monitors\HistogramRender.shader" />
+     <None Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Shaders\SliceRenderingShader.shader" />
      <None Include="Assets\ZED\Examples\Planetarium\Resources\Sun\Shader\SunCorona.shader" />
      <None Include="Assets\ZED\Examples\Planetarium\Resources\Sun\Shader\InnerGlow.shader" />
+     <None Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\ProjectSettings\ProjectVersion.txt" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Editor Resources\UI\CurveBackground.shader" />
      <None Include="Assets\ZED\Examples\GreenScreen\Shaders\GreenScreen.shader" />
      <None Include="Assets\Depthkit\Examples\Clips\Julianne\Julianne.txt" />
@@ -636,6 +655,7 @@
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Resources\Shaders\Tonemapping.cginc" />
      <None Include="Assets\Depthkit\Looks\Resources\Depthkit.cginc" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
+     <None Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Shaders\TransferFunctionShader.shader" />
      <None Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Shaders\RuntimeGizmos.shader" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Resources\Shaders\Uber.shader" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\Lighting\ZED_Hide.shader" />
@@ -683,6 +703,7 @@
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Resources\Shaders\TAA.cginc" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Resources\Shaders\EyeAdaptation.cginc" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_ComposeMask.shader" />
+     <None Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Shaders\TransferFunction2DShader.shader" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Resources\Shaders\GrainGen.shader" />
      <None Include="Assets\00_Project Files\Imports\Interactive Grass\ReadMe.txt" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Resources\Shaders\FXAA.shader" />
@@ -701,6 +722,7 @@
      <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_Surface_PostProcessing.shader" />
      <None Include="Assets\00_Project Files\Imports\Depthkit Imports\2nd Pass Footage\CLOWN_NOSE07_14_15_48_29_Export_07_30_12_06_34.txt" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\PostProcessing\ZED_StencilToMask.shader" />
+     <None Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Shaders\DirectVolumeRenderingShader.shader" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Resources\Shaders\Bloom.shader" />
      <None Include="Assets\LeapMotionGestureDetection\LeapMotion\Core\Version.txt" />
      <None Include="Assets\Procedural Effects\RainMaker\Readme.txt" />
@@ -722,6 +744,7 @@
      <None Include="Assets\ZED\SDK\Helpers\Shaders\SpatialMapping\Textures.shader" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\ZED_Utils.cginc" />
      <None Include="Assets\Procedural Effects\Particle Attractor by Moonflower Carnivore\Particle Attractor documentation.txt" />
+     <None Include="Assets\00_Project Files\Imports\UnityVolumeRendering-master\Assets\Shaders\TransferFunctionPaletteShader.shader" />
      <None Include="Assets\ZED\SDK\Helpers\Shaders\ZED_PointCloud.shader" />
      <None Include="Assets\Procedural Effects\EpicFireflyEffects\PostProcessing\Editor Resources\Monitors\WaveformCompute.compute" />
      <None Include="Assets\ZED\Examples\Drone Shooter\Readme.txt" />
