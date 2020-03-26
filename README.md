@@ -1,2 +1,2 @@
 # Thesis
- Thesis originating in DF Studio
+ Repository for all code and assets involved in Playtime for Punctum.
