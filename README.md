@@ -10,4 +10,4 @@
  
  Original code can be found [here](https://github.com/npyalex/Thesis/tree/master/Assets/00_Project%20Files/Scripts).
  
- More documentation on this project can be found at the [website](https://playtime-for-punctum.format.com).
+ More information on this project can be found at the [Playtime for Punctum](https://playtime-for-punctum.format.com) documentation site.
