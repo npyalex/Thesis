@@ -6,7 +6,7 @@
  
  [Punctum.unity](https://github.com/npyalex/Thesis/blob/master/Assets/00_Project%20Files/Scenes/Punctum.unity) for he narrative version V1.0 demonstrated in [this video](https://www.youtube.com/watch?v=f31TC1WDgpw).
  
- Tests and experiments can be found [here](Assets/00_Project Files/Scenes/Tests/).
+ Tests and experiments can be found [here](Assets/00_Project Files/Scenes/Tests).
  
  Original code can be found [here](https://github.com/npyalex/Thesis/tree/master/Assets/00_Project%20Files/Scripts).
  
