@@ -79,6 +79,8 @@
      <Compile Include="Assets\00_Project Files\Scripts\ActorManager.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\BubbleTrigger.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\ControllerOnOff.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\CountdownAndScreenshot.cs" />
+     <Compile Include="Assets\00_Project Files\Scripts\CountdownTimerUI.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\DeletePaint.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\DestroyAfterThrow.cs" />
      <Compile Include="Assets\00_Project Files\Scripts\DispenseOnActivate.cs" />

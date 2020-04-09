@@ -10158,7 +10158,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &657155816
 Transform:
   m_ObjectHideFlags: 0
@@ -13348,7 +13348,7 @@ PrefabInstance:
     - target: {fileID: 8756054319666518859, guid: 77eb63d41eb420e469311cef5c3aae59,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8756054319997492725, guid: 77eb63d41eb420e469311cef5c3aae59,
         type: 3}
@@ -13393,7 +13393,7 @@ PrefabInstance:
     - target: {fileID: 8756054319997492728, guid: 77eb63d41eb420e469311cef5c3aae59,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8756054320033252325, guid: 77eb63d41eb420e469311cef5c3aae59,
         type: 3}
@@ -13403,7 +13403,7 @@ PrefabInstance:
     - target: {fileID: 8756054320033252328, guid: 77eb63d41eb420e469311cef5c3aae59,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8756054320033252334, guid: 77eb63d41eb420e469311cef5c3aae59,
         type: 3}
@@ -13538,7 +13538,7 @@ PrefabInstance:
     - target: {fileID: 8756054320859880694, guid: 77eb63d41eb420e469311cef5c3aae59,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8756054321079437461, guid: 77eb63d41eb420e469311cef5c3aae59,
         type: 3}
@@ -13553,7 +13553,7 @@ PrefabInstance:
     - target: {fileID: 8756054321079437464, guid: 77eb63d41eb420e469311cef5c3aae59,
         type: 3}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 77eb63d41eb420e469311cef5c3aae59, type: 3}
@@ -16259,7 +16259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1000602957
 Transform:
   m_ObjectHideFlags: 0
@@ -22636,7 +22636,7 @@ TextMesh:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1677939472}
-  m_Text: Pebble
+  m_Text: Punctum
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -24279,7 +24279,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1807630914}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
